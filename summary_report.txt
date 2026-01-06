@@ -1,13 +1,35 @@
 ======================================================================
-APPLE STOCK PREDICTION SUMMARY
+APPLE STOCK ANALYSIS SUMMARY REPORT
 ======================================================================
 
-BEST MODEL: Linear Regression
-R² Score: 0.9980
+Data Summary:
+- Original data: (2727, 7)
+- Cleaned data: (2727, 6)
+- Target: Open
+- Features: 4
+- Training samples: 2181
+- Testing samples: 546
 
-FUTURE PREDICTIONS:
-Day +1: $-903118.55 (Change: $-903390.04, -332752.60%)
-Day +2: $-912150.55 (Change: $-912422.04, -336079.43%)
-Day +3: $-921272.87 (Change: $-921544.36, -339439.52%)
-Day +4: $-930486.41 (Change: $-930757.90, -342833.22%)
-Day +5: $-939792.08 (Change: $-940063.57, -346260.85%)
+Model Performance:
+--------------------------------------------------
+Linear Regression:
+  R²: 0.9974
+  RMSE: $1.39
+  MAE: $1.00
+
+Random Forest:
+  R²: -0.4082
+  RMSE: $32.11
+  MAE: $23.46
+
+Support Vector Regressor:
+  R²: -2.7727
+  RMSE: $52.56
+  MAE: $34.74
+
+Files Generated:
+1. apple_stock_cleaned.csv - Cleaned dataset
+2. predictions.csv - Model predictions
+3. model_metrics.csv - Performance metrics
+4. apple_stock_analysis.png - Visualizations
+5. summary_report.txt - This report
